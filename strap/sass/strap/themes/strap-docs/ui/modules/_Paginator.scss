@@ -1,0 +1,23 @@
+.Module.Paginator {
+	margin: line(1) 0 0;
+
+	ul {
+		li {
+			@include inline-block;
+			vertical-align: middle;
+
+			a {
+				padding: 3px 8px;
+				@include inline-block;
+			}
+			&.Active {
+				a {
+					color: #fff;
+					font-weight: bold;
+					cursor: default;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

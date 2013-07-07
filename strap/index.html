@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<title>STRAP docs</title>
+
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css"/>
+		<link href="css/common.css" rel="stylesheet" />
+		<link href="css/prism.css" rel="stylesheet" />
+
+		<script src="js/prism.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/common.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+
+		<header class="Sticky">
+			<div class="Container">
+				<div class="Row Break Tablet">
+					<div class="Col-12 Center">
+						<div class="Content">
+							<ul class="Horizontal Center">
+								<li>
+									<a href="#basics">Основы</a>
+								</li>
+								<li>
+									<a href="#layout">Разметка</a>
+								</li>
+								<li>
+									<a href="#functions">Функции</a>
+								</li>
+								<li>
+									<a href="#mixins">Примеси</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="content">
+			<div id="strap-on-logo">
+				<div class="Container">
+					<div class="Row">
+						<div class="Col-3 Center">
+							<div class="Content">
+								<img src="images/themes/strap-docs/strap-on-sass.png" width="250" alt="STRAP on Sass logo"/>
+							</div>
+						</div>
+						<div class="Col-9 Middle">
+							<div class="Content">
+								<h1>STRAP <b>on</b> Sass</h1>
+								<h2 class="NoTopMargin">
+									Compass responsive boilerplate + framework
+								</h2>
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-9"></div>
+						<div class="Col-3">
+							<div class="Content">
+								<a href="https://github.com/pfrankov/STRAP/archive/master.zip" class="Button Dark"><i class="Icon Entypo Download"></i> Скачать v0.1</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<section class="Container">
+				<h2 id="basics">
+					Основы
+				</h2>
+
+
+				<div class="Row">
+					<div class="Col-6">
+						<div class="Content">
+							<article>
+								<h3>
+									Что такое STRAP?
+								</h3>
+
+								<p>
+									STRAP — это крутой базовый шаблон на Compass с крайне полезными фичами.
+									Это больше, чем ещё один CSS-фреймворк (наверное, потому что это вообще не CSS-фреймворк).
+									STRAP — это самый лучший способ упорядочить и ускорить вёрстку.
+								</p>
+							</article>
+						</div>
+					</div>
+					<div class="Col-6">
+						<div class="Content">
+							<article>
+								<h3>
+									Что ещё за фичи?
+								</h3>
+
+								<p>
+									Ну, к примеру, такие фичи, как вложенные сетки с вертикальным выравниванием, как
+									модульная структура и темизация, как крайне полезные миксины и функции, как удобная реализация
+									спрайтов и градиентов (обычный Compass излишне усложняет этот процесс или не даёт достаточной гибкости) и возможно ещё что-то. Ну это так, в общих чертах.
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+
+				<div class="Row">
+					<div class="Col-4">
+						<div class="Content">
+							<article>
+								<h3>
+									Поддержка браузерами
+								</h3>
+
+								<p>
+									Нормальные браузеры, нормальные мобильные браузеры, IE8+
+								</p>
+							</article>
+						</div>
+					</div>
+
+					<div class="Col-4">
+						<div class="Content">
+							<article>
+								<h3>
+									Что для этого нужно?
+								</h3>
+
+								<p>
+									Всего ничего: <a href="http://www.ruby-lang.org/en/downloads/">Ruby</a> + <a href="http://compass-style.org/install/">Sass + Compass</a> (прописанный в PATH, кстати).
+								</p>
+							</article>
+						</div>
+					</div>
+
+					<div class="Col-4">
+						<div class="Content">
+							<article>
+								<h3>
+									Создание проекта
+								</h3>
+
+								<p>
+									Проект уже создан. Запустите <code class="language-css">executable/compass_watch.bat</code> и переходите уже скорее к разработке.
+								</p>
+							</article>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+				<article>
+					<h3>Стайлгайды STRAP</h3>
+
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+								<h5>
+									HTML
+								</h5>
+								<ul>
+									<li><b>Классы</b> именуются в формате <code class="language-css">UpperCamelCase</code> (что очень хорошо, если вы используете другой формат);</li>
+									<li><b>ID</b> и <b>названия атрибутов</b> <code class="language-css">именуются-через-дефис</code>;</li>
+									<li>Содержимое <b>name</b> атрибутов <code class="language-css">именуется_через_подчёркивание</code>.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+								<h5>
+									SCSS
+								</h5>
+								<ul>
+									<li>Константы именуются в <code>ALL_UPPER_CASE</code>;</li>
+									<li>Переменные, примеси и функции <code class="language-css">именуются-через-дефис</code>;</li>
+									<li>К имени приватных переменных, функций и примесей добавляется префикс <code>_подчёркивание</code>;</li>
+									<li>Комментирование в SCSS-файлах выполняется только двойным слешем <code class="language-css">//</code></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</article>
+
+				<article>
+					<h3>
+						Структура проекта
+					</h3>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+								<p>
+									Ниже представлен не чистый STRAP, а проект этой самой документации, которую вы наблюдаете.
+								</p>
+								<p>
+									Всё более-менее очевидно, поэтому я остановлюсь на самом неочевидном: папке <code class="language-css">sass</code>. Файлы этой папки должны отвечать за конечные, генерируемые CSS-файлы.
+									Внутри каждого из них происходит сборка STRAP со всякими модулями: примесями, функциями, дополнительными классами, темами.
+								</p>
+								<p>
+									Практически всё содержимое <code class="language-css">/sass/strap/</code>, за исключением <code class="language-css">/sass/strap/strap-lib/</code> является пользовательскими расширением существующих в STRAP примесей, функций, конфигов и т.п.
+
+								</p>
+								<p>
+									<small>Нажимая на название папки можно посмотреть, что находится внутри неё. Кроме того, многие папки и файлы снабжены кратким описанием своего предназначения.</small>
+								</p>
+
+								<ul class="NoStyle All">
+									<li title="Конфиг Compass">
+										<i class="Icon Entypo DocText"></i>config.rb
+									</li>
+									<li>
+										<span class="Actions ShowMore" title="Сгенерированные CSS и файлы шрифтов"><i class="Icon Entypo Folder"></i>css</span>
+
+										<ul class="More">
+											<li title="Переопределяющие стили для тех, кто не смог поставить Compass">
+												<i class="Icon Entypo DocText"></i>_fixes.css
+											</li>
+											<li>
+												<span class="Actions ShowMore" title="Шрифты"><i class="Icon Entypo Folder"></i>fonts</span>
+
+												<ul class="More">
+													<li title="Иконки">
+														<span class="Actions ShowMore"><i class="Icon Entypo Folder"></i>icons</span>
+
+														<ul class="More">
+															<li>
+																<i>* Файлы шрифта иконок *</i>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<span class="Actions ShowMore" title="Исполняемые файлы проекта"><i class="Icon Entypo Folder"></i>executable</span>
+
+										<ul class="More">
+											<li title="Запускает слежение за изменением файлов в папке sass. Для Windows"><i class="Icon Entypo Cog"></i>compass_watch.bat</li>
+											<li title="Запускает слежение за изменением файлов в папке sass. Для Mac и *nix"><i class="Icon Entypo Cog"></i>compass_watch.sh</li>
+										</ul>
+									</li>
+									<li>
+										<span class="Actions ShowMore" title="Основная папка для размещения вёрстки"><i class="Icon Entypo Folder"></i>htmltemplates</span>
+
+										<ul class="More">
+											<li title="Базовый файл вёрстки"><i class="Icon Entypo DocText"></i>main.html</li>
+										</ul>
+									</li>
+									<li>
+										<span class="Actions ShowMore" title="Папка для хранения изображений и спрайтов вёрстки"><i class="Icon Entypo Folder"></i>images</span>
+
+										<ul class="More">
+											<li>
+												<span class="Actions ShowMore" title="Спрайты"><i class="Icon Entypo Folder"></i>sprites</span>
+
+												<ul class="More">
+													<li class="Open" title="Спрайты заведомо интерактивных элементов"><i class="Icon Entypo Folder"></i>_controls</li>
+													<li class="Open" title="Спрайты иконок"><i class="Icon Entypo Folder"></i>_icons</li>
+												</ul>
+											</li>
+											<li>
+												<span class="Actions ShowMore" title="Изображения для тем"><i class="Icon Entypo Folder"></i>themes</span>
+
+												<ul class="More">
+													<li>
+														<span class="Actions ShowMore" title="Изображения темы STRAPDocs"><i class="Icon Entypo Folder"></i>strap-docs</span>
+
+														<ul class="More">
+															<li>
+																<span class="Actions ShowMore" title="Спрайты"><i class="Icon Entypo Folder"></i>sprites</span>
+
+																<ul class="More">
+																	<li class="Open" title="Спрайты иконок"><i class="Icon Entypo Folder"></i>_icons</li>
+																	<li>
+																		<span class="Actions ShowMore" title="Иконки браузеров для примера"><i class="Icon Entypo Folder"></i>_browsers</span>
+
+																		<ul class="More">
+																			<li>
+																				<i>* Иконки браузеров *</i>
+																			</li>
+																		</ul>
+																	</li>
+																	<li>
+																		<span class="Actions ShowMore" title="Спрайт иконок браузеров"><i class="Icon Entypo Picture"></i>browsers-sprite.png</span>
+																	</li>
+																</ul>
+															</li>
+															<li><i>* Изображения темы *</i></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="Open" title="Папка для размещения изображений самого сайта (аватарок, загружаемых изображений)">
+										<i class="Icon Entypo Folder"></i>img
+									</li>
+									<li>
+										<span class="Actions ShowMore" title="JavaScript файлы"><i class="Icon Entypo Folder"></i>js</span>
+
+										<ul class="More">
+											<li title="Базовый JavaScript файл"><i class="Icon Entypo DocText"></i>common.js</li>
+										</ul>
+									</li>
+									<li>
+										<span class="Actions ShowMore" title="SCSS файлы"><i class="Icon Entypo Folder"></i>sass</span>
+
+										<ul class="More">
+											<li>
+												<span class="Actions ShowMore" title="Папка самого STRAP"><i class="Icon Entypo Folder"></i>strap</span>
+
+												<ul class="More">
+													<li title="Единственный подключаемый файл, который собирает весь STRAP">
+														<i class="Icon Entypo DocText"></i>_init.scss
+													</li>
+													<li title="Редактируемый конфиг, наследуемый от констант">
+														<i class="Icon Entypo DocText"></i>__config.scss
+													</li>
+													<li title="Файл пользовательских функций">
+														<i class="Icon Entypo DocText"></i>__functions.scss
+													</li>
+													<li title="Файл пользовательских примесей">
+														<i class="Icon Entypo DocText"></i>__mixins.scss
+													</li>
+
+													<li class="Open">
+														<span title="Секретная папка, не для изменений"><i class="Icon Entypo Folder"></i>strap-lib</span>
+													</li>
+
+													<li>
+														<span class="Actions ShowMore" title="Разное"><i class="Icon Entypo Folder"></i>misc</span>
+
+														<ul class="More">
+															<li title="Нормализатор">
+																<i class="Icon Entypo DocText"></i>_normalize.scss
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<span class="Actions ShowMore" title="Темы"><i class="Icon Entypo Folder"></i>themes</span>
+
+														<ul class="More">
+															<li>
+																<span class="Actions ShowMore" title="Тема STRAPDocs"><i class="Icon Entypo Folder"></i>strap-docs</span>
+
+																<ul class="More">
+																	<li>
+																		<span class="Actions ShowMore" title="Модули темы"><i class="Icon Entypo Folder"></i>modules</span>
+
+																		<ul class="More">
+																			<li title="Модуль пэйджинатора, используемый темой">
+																				<i class="Icon Entypo DocText"></i>_Paginator.scss
+																			</li>
+																		</ul>
+																	</li>
+																	<li>
+																		<span class="Actions ShowMore" title="Отображение темы"><i class="Icon Entypo Folder"></i>ui</span>
+
+																		<ul class="More">
+																			<li>
+																				<i class="Icon Entypo DocText"></i>_buttons.scss
+																			</li>
+																			<li title="Базовое описание темы. Подключает элементы темы.">
+																				<i class="Icon Entypo DocText"></i>_theme.scss
+																			</li>
+																		</ul>
+																	</li>
+
+																	<li title="Конфиг темы">
+																		<i class="Icon Entypo DocText"></i>__config.scss
+																	</li>
+																	<li title="Переопределяющие и дополняющие функции">
+																		<i class="Icon Entypo DocText"></i>__functions.scss
+																	</li>
+																	<li title="Переопределяющие и дополняющие примеси">
+																		<i class="Icon Entypo DocText"></i>__mixins.scss
+																	</li>
+																	<li title="Главный и обязательный файл любой темы">
+																		<i class="Icon Entypo DocText"></i>_init.scss
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<span class="Actions ShowMore" title="Минимальная тема"><i class="Icon Entypo Folder"></i>your-theme</span>
+
+																<ul class="More">
+																	<li>
+																		<span class="Actions ShowMore" title="Отображение темы"><i class="Icon Entypo Folder"></i>ui</span>
+
+																		<ul class="More">
+																			<li title="Базовое описание темы">
+																				<i class="Icon Entypo DocText"></i>_theme.scss
+																			</li>
+																		</ul>
+																	</li>
+
+																	<li title="Главный и обязательный файл любой темы">
+																		<i class="Icon Entypo DocText"></i>_init.scss
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<span class="Actions ShowMore" title="Всё, что относится к отображению"><i class="Icon Entypo Folder"></i>ui</span>
+
+														<ul class="More">
+															<li>
+																<i class="Icon Entypo DocText"></i>_animations.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_buttons.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_controls.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_forms.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_grid.scss
+															</li>
+															<li title="Полезные классы">
+																<i class="Icon Entypo DocText"></i>_helpers.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_icons.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_tables.scss
+															</li>
+															<li>
+																<i class="Icon Entypo DocText"></i>_typography.scss
+															</li>
+
+
+															<li>
+																<span class="Actions ShowMore"><i class="Icon Entypo Folder"></i>icons</span>
+
+																<ul class="More">
+																	<li><i class="Icon Entypo DocText"></i>_entypo.scss</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+								<h4 class="NoTopMargin">Как выглядит типичная инициализация</h4>
+<pre class="language-css">
+<code>// Инициализация
+@import "strap/init";
+
+// Нормализатор
+@import "strap/misc/normalize";
+
+// Подключение классов для сеток, текста и прочего
+@import "strap/ui/grid";
+@import "strap/ui/typography";
+@import "strap/ui/helpers";
+
+// Подключение классов для иконок entypo
+@import "strap/ui/icons";
+@import "strap/ui/icons/entypo";
+
+// Подключение стандартных классов кнопок, которые
+   требует тема
+@import "strap/ui/buttons";
+// Инициализация темы STRAPDocs
+@import "strap/themes/strap-docs/init";</code>
+</pre>
+
+								<h4>Некоторые советы по поддержанию структуры</h4>
+
+								<ul>
+									<li>Используйте дефисы <code class="language-css">-</code>для разделения названия имён файлов и папок;</li>
+									<li>Все генерируемые папки со спрайтами <code class="language-css">/images/sprites/</code> должны иметь префикс подчёркивания <code class="language-css">_</code> для корректной генерации;</li>
+									<li>Абсолютно все файлы внутри <code class="language-css">/sass/strap</code> должны иметь префикс подчеркивания <code class="language-css">_</code>, чтобы не быть скопмилированными в качестве отдельных файлов;</li>
+									<li>Файлы с двойным подчёркиванием <code class="language-css">__</code> не содержат в своём корне CSS (например, файлы с примесями, функциями, конфигами);</li>
+									<li>Файлы тем не должны ничего запрашивать из родительских директорий; вместо этого следует указывать запрашиваемые файлы в описание темы;</li>
+									<li>Крайне не рекомендуется менять содержимое в папке <code class="language-css">/sass/strap/strap-lib</code> — любое поведение можно переопределить в пользовательских файлах.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</article>
+
+			</section>
+
+			<section class="Container">
+				<h2 id="layout">
+					Разметка
+				</h2>
+				<small>
+					<code class="language-css">/sass/strap/ui/_grid.scss</code>
+				</small>
+
+				<article>
+					<h3>Самый базовый класс</h3>
+					<p><code class="language-css">.Container</code> — класс, с помощью которого происходит выравнивание контента по центру страницы. Рекомендуется к использованию в качестве обёртки (см. исходный код данной страницы).</p>
+				</article>
+
+				<article>
+					<h3>
+						Сетка
+					</h3>
+
+					<p>
+						<b>12</b> колонок, шириной <b>60px</b> с отступами в <b>20px</b> по-умолчанию, что даёт суммарную сетку в <b>960px</b>.<br/>
+						<small>Изменить дефолтные значения можно в конфиге <code>/sass/strap/__config.scss</code></small>
+					</p>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content Colored">Col-6</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content Colored">Col-6</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-4">
+							<div class="Content Colored">Col-4</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content Colored">Col-4</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content Colored">Col-4</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-3">
+							<div class="Row">
+								<div class="Col-1"><div class="Content Colored">Col-1</div></div>
+								<div class="Col-2"><div class="Content Colored">Col-2</div></div>
+							</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-2 Offset-1">
+							<div class="Content Colored">Col-1 Offset-1</div>
+						</div>
+						<div class="Col-3 Offset-2">
+							<div class="Content Colored">Col-3 Offset-2</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+					</div>
+					<div class="Row">
+
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+						<div class="Col-7">
+							<div class="Content Colored">Col-7</div>
+						</div>
+					</div>
+
+
+					<h4>Как их использовать?</h4>
+					<p>В нашем распоряжении находится 12 колонок, и мы можем разделить их так, как захотим. Главное, чтобы части были целыми.</p>
+
+					<div class="Row">
+						<div class="Col-8">
+							<div class="Content">
+
+								<div class="Row">
+									<div class="Col-4">
+										<div class="Content">
+											<p>1. В первую очередь нам понадобится блок <code class="language-css">.Row</code> (сплошная строка).</p>
+<pre class="language-markup">
+<code>&lt;div class="Row"&gt;&lt;/div&gt;</code>
+</pre>
+										</div>
+									</div>
+									<div class="Col-4">
+										<p>2. Теперь было бы неплохо разделить её на несколько частей (8 и 4 в нашем случае).</p>
+
+										<pre class="language-markup">
+<code>&lt;div class="Row"&gt;
+	&lt;div class="Col-8"&gt;&lt;/div&gt;
+	&lt;div class="Col-4"&gt;&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="Col-4">
+
+							<div class="Content">
+								<p>3. И наконец, добавим блок <code class="language-css">.Content</code> внутрь каждой колонки, чтобы было понятно, где находится контент.</p>
+<pre class="language-markup">
+<code>&lt;div class="Row"&gt;
+	&lt;div class="Col-8"&gt;
+		&lt;div class="Content"&gt;
+			8 колонок
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="Col-4"&gt;
+		&lt;div class="Content"&gt;
+			4 колонки
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+
+					<div class="Row">
+						<div class="Col-8">
+							<div class="Content Colored">
+								8 колонок
+							</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content Colored">
+								4 колонки
+							</div>
+						</div>
+					</div>
+
+					<div class="Row">
+						<div class="Col-12">
+							<div class="Content">
+								<h4>Вложенные колонки</h4>
+
+								<p>Никакой дополнительной магии не требуется. Просто поместите ещё один блок <code class="language-css">.Row</code> внутрь колонки.</p>
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-markup">
+<code>&lt;div class="Col-6"&gt;
+	&lt;div class="Content"&gt;
+		&lt;div class="Row"&gt;
+			&lt;div class="Col-2"&gt;
+				&lt;div class="Content"&gt;
+					Col-2
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="Col-3"&gt;
+				&lt;div class="Content"&gt;
+					Col-3
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="Col-1"&gt;
+				&lt;div class="Content"&gt;
+					Col-1
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content Colored">
+								<div class="Row">
+									<div class="Col-2">
+										<div class="Content Colored">
+											Col-2
+										</div>
+									</div>
+									<div class="Col-3">
+										<div class="Content Colored">
+											Col-3
+										</div>
+									</div>
+									<div class="Col-1">
+										<div class="Content Colored">
+											Col-1
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<h4>Вертикальный ритм</h4>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+								<p>
+									Все вертикальные отступы, все размеры всех элементов по-умолчанию так или иначе кратны высоте строки, что делает страницу ещё более гармоничной*.
+								</p>
+								<small>
+									* — На самом деле, всё не совсем так: сделать полноценный вертикальный ритм, без ручной подгонки, не представляется возможным.
+									Однако, даже предлагаемый вертикальный ритм всегда выглядит лучше его отсутствия.
+								</small>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+								<h3 class="NoMargin">
+									Не ломайте гармонию!
+								</h3>
+								<h4 class="NoMargin">
+									Следите за вертикальным ритмом!
+								</h4>
+								<img src="images/themes/strap-docs/bleat.jpg" width="300" alt="Блеать!" title="Картинка для привлечения внимания к проблеме соблюдения вертикального ритма"/>
+							</div>
+						</div>
+					</div>
+					<h4>Вертикальное выравнивание!</h4>
+
+					<div class="Content Colored" style="padding: 0;">
+						<div class="Row">
+							<div class="Col-4 Top">
+								<div class="Content Colored">
+									Этот блок должен быть<br/>
+									где-то вверху.
+								</div>
+							</div>
+							<div class="Col-4 Middle">
+								<div class="Content Colored">
+									Этот блок — посередине.
+								</div>
+							</div>
+							<div class="Col-4 Bottom">
+								<div class="Content Colored">
+									А этот — прижат к самому низу.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-4">
+							<div class="Content">
+<pre class="language-markup">
+<code>&lt;div class="Col-4 Top"&gt;
+	&lt;div class="Content"&gt;
+		Этот блок должен быть&lt;br/&gt;
+		где-то вверху.
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+
+							</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content">
+<pre class="language-markup">
+<code>&lt;div class="Col-4 Middle"&gt;
+	&lt;div class="Content"&gt;
+		Этот блок — посередине.
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content">
+<pre class="language-markup">
+<code>&lt;div class="Col-4 Bottom"&gt;
+	&lt;div class="Content"&gt;
+		А этот — прижат к самому низу.
+	&lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<h3>Респонсив</h3>
+
+					<p>
+						Поведение по-умолчанию: при достижении определённого значения размера экрана, колонки превращаются в список, «падая» друг под другом и расширяясь на 100%.
+					</p>
+					<p>
+						Для упрощения вёрстки блоков для разных размеров экранов существуют несколько простых и удобных классов, дополняющих строку <code class="language-css">.Row</code>:
+					</p>
+
+					<p><code class="language-css">.Row.NoBreak</code> — не даёт колонкам падать вообще. Очень удобно, когда нужно разбить строку пополам в мобильной версии сайта.</p>
+
+					<div class="Row NoBreak">
+						<div class="Col-6">
+							<div class="Content Colored">Col-6</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content Colored">Col-6</div>
+						</div>
+					</div>
+
+
+					<p class="TopMargin-3"><code class="language-css">.Row.Phone.Break</code> — колонки падают только на телефонных разрешениях.</p>
+					<div class="Row Phone Break">
+						<div class="Col-4">
+							<div class="Content Colored">Col-4</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content Colored">Col-4</div>
+						</div>
+						<div class="Col-4">
+							<div class="Content Colored">Col-4</div>
+						</div>
+					</div>
+
+
+					<p class="TopMargin-3">
+						<code class="language-css">.Row.Phone.Landscape.Break</code> — колонки начинают падать с телефонных разрешений в альбомной ориентации.<br/>
+						<small>Данный пример так же иллюстрирует возможности вложенных колонок в адаптивной вёрстке.</small>
+					</p>
+					<div class="Row Phone Landscape Break">
+						<div class="Col-3">
+							<div class="Content Colored">
+								<div class="Row NoBreak" title=".Row.NoBreak">
+									<div class="Col-1"><div class="Content Colored">Col-1</div></div>
+									<div class="Col-2"><div class="Content Colored">Col-2</div></div>
+								</div>
+							</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+					</div>
+
+
+					<p class="TopMargin-3"><code class="language-css">.Row.Tablet.Break</code> — колонки начинают падать с планшетных разрешений экрана.</p>
+					<div class="Row Tablet Break">
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+						<div class="Col-1">
+							<div class="Content Colored">Col-1</div>
+						</div>
+					</div>
+
+					<p class="TopMargin-3"><code class="language-css">.Row.Tablet.Landscape.Break</code> — колонки начинают падать с планшетных разрешений в альбомной ориентации.</p>
+
+					<div class="Row Tablet Landscape Break">
+
+						<div class="Col-2">
+							<div class="Content Colored">Col-2</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored">Col-3</div>
+						</div>
+						<div class="Col-7">
+							<div class="Content Colored">Col-7</div>
+						</div>
+					</div>
+
+
+					<h4 class="TopMargin-3">Отображение элементов</h4>
+					<p>Те же самые классы работают для сокрытия элементов, в зависимости от разрешения экрана. Только вместо <code class="language-css">.Break</code> используется <code class="language-css">.Hide</code>.</p>
+
+					<div class="Row">
+
+						<div class="Col-3">
+							<div class="Content Colored Tablet Landscape Hide">.Tablet.Landscape.Hide</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored Tablet Hide">.Tablet.Hide</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored Phone Landscape Hide">.Phone.Landscape.Hide</div>
+						</div>
+						<div class="Col-3">
+							<div class="Content Colored Phone Hide">.Phone.Hide</div>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<h2>
+						Текст
+					</h2>
+					<small>
+						<code class="language-css">/sass/strap/ui/_typography.scss</code>
+					</small>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+								<h1 class="NoTopMargin">Заголовок &lt;h1&gt; (38px)</h1>
+
+								<h2>Заголовок &lt;h2&gt; (32px)</h2>
+
+								<h3>Заголовок &lt;h3&gt; (24px)</h3>
+								<h4>Заголовок &lt;h4&gt; (18px)</h4>
+								<h5>Заголовок &lt;h5&gt; (16px)</h5>
+								<h6>Заголовок &lt;h6&gt; (12px)</h6>
+							</div>
+						</div>
+						<div class="Col-6">
+							<p>Чтобы убрать отступы — достаточно добавить соответствующий класс к заголовку:</p>
+
+							<dl>
+								<dt><code class="language-css">.NoTopMargin</code></dt>
+								<dd>Убирает верхний отступ</dd>
+
+								<dt><code class="language-css">.NoBottomMargin</code></dt>
+								<dd>Убирает нижний отступ</dd>
+
+								<dt><code class="language-css">.NoMargin</code></dt>
+								<dd>Убирает верхний и нижний отступы</dd>
+							</dl>
+						</div>
+					</div>
+
+					<p class="TopMargin-3">
+						Так выглядит обычный параграф.
+					</p>
+					<small>
+						А это &lt;small&gt;
+					</small>
+				</article>
+
+			</section>
+
+
+			<section class="Container">
+				<h2 id="functions">Функции</h2>
+				<small>
+					<code class="language-css">/sass/strap/__functions.scss</code>
+				</small>
+
+				<article>
+					<h3>
+						line ()
+					</h3>
+					<code class="language-javascript">line ([lines: 1, font-size: px])</code>
+
+					<p>
+						Возвращает количество пикселей, соответствующее высоте <code>lines</code> линий для установленного размера шрифта <code>font-size</code>.
+						Функция необходима для поддержания вертикального ритма. Используется для задания вертикальных отступов и высоты строки.
+						Постарайтесь не использовать любые другие вертикальные отступы. Аргумент <code class="language-javascript">lines</code> должен быть кратен 0.25
+					</p>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>/* 1 */
+margin-bottom: line (1);
+/* 2 */
+margin-bottom: line (1, 20px);</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>/* 1 */
+margin-bottom: 20.44px;
+/* 2 */
+margin-bottom: 30.66px;</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
+				</article>
+
+				<article>
+					<h3>
+						gutter ()
+					</h3>
+					<code class="language-javascript">gutter ([number: 1])</code>
+
+					<p>
+						Возвращает указанное количество горизонтальных отступов, определяемых константой <code>$GUTTER_WIDTH</code>. Постарайтесь не использовать любые другие горизонтальные отступы.
+						Аргумент <code class="language-javascript">number</code> должен быть кратен 0.25
+					</p>
+				</article>
+
+			</section>
+
+
+			<section class="Container">
+				<h2 id="mixins">Примеси</h2>
+				<small>
+					<code class="language-css">/sass/strap/__mixins.scss</code>
+				</small>
+
+				<article>
+
+					<h3>
+						font-size
+					</h3>
+
+					<code class="language-javascript">@include font-size (font-size[, lines])</code>
+					<p>
+						Устанавливает размер шрифта в <code>rem</code> (с обратной совместимостью) и соответствующую ему высоту строки, чтобы попадать в вертикальный ритм.
+						Всегда устанавливайте размер шрифта с помощью этой примеси.
+					</p>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>/* 1 */
+@include font-size (20px);
+/* 2 */
+@include font-size (20px, 2);</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>/* 1 */
+font-size: 20px;
+font-size: 1.42857rem;
+line-height: 30.66px;
+/* 2 */
+font-size: 20px;
+font-size: 1.42857rem;
+line-height: 56.21px;</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+
+				<article>
+					<h3>
+						load-font
+					</h3>
+					<code class="language-javascript">@include load-font (name, file-name-without-extension[, weight[, style]])</code>
+					<p>
+						Подключает файлы шрифтов из папки <code>/css/fonts/</code>. Шрифты одного начертания должны обладать единым именем <code>file-name-without-extension</code> и быть представлены в четырёх форматах: eot, svg, ttf, woff.
+						Насыщенность <code class="language-css">font-weight</code> и стиль <code class="language-css">font-style</code> задаются через аргументы <code>weight</code> и <code>style</code>.
+					</p>
+				</article>
+				<article>
+					<h3>
+						heading
+					</h3>
+					<code class="language-javascript">@include heading (top-lines, bottom-lines, font-size)</code>
+					<p>
+						Устанавливает отступы в базовых линиях: сверху <code class="language-javascript">top-lines</code> и снизу <code class="language-javascript">bottom-lines</code>, а так же размер шрифта <code class="language-javascript">font-size</code> для заголовка.
+						Необходим для соблюдения заголовками вертикального ритма.
+					</p>
+				</article>
+				<article>
+					<h3>
+						breakpoint
+					</h3>
+					<code class="language-javascript">@include breakpoint (start[, end]) { styles; }</code>
+					<p>
+						Создаёт контрольные точки разрешений экрана для адаптивной вёрстки, начиная с которых срабатывают заданные <code class="language-javascript">styles</code>.
+						Если указан второй аргумент, правила срабатывают в диапазоне разрешений от <code class="language-javascript">start</code> включительно до <code class="language-javascript">end</code> не включительно.<br/>
+						Значением аргументов могут быть <i>px</i> или фиксированные значения (&nbsp;<i>phone</i> | <i>phone&nbsp;landscape</i> | <i>tablet</i> | <i>tablet&nbsp;landscape</i> | <i title="Ширина контентной области">content</i>&nbsp;), переопределяемые в <code class="language-css">/sass/strap/__config.scss</code>.
+					</p>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>@include breakpoint (phone landscape, tablet) {
+	.Content {
+		background: #c00;
+	}
+}</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>@media only screen and (min-width: 480px) and (max-width: 959px) {
+	.Content {
+		background: #c00;
+	}
+}</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</article>
+				<article>
+					<h3>
+						sprite-dir
+					</h3>
+					<code class="language-javascript">@include sprite-dir (dir-name[, sprites-dir])</code>
+					<p>
+						Создаёт спрайт из png изображений папки _<code>dir-name (без префикса)</code>, находящейся в <code>sprites-dir</code> (по-умолчанию, в <code>/images/sprites/</code>). Используется со <code>sprite-file</code>.
+					</p>
+				</article>
+				<article>
+					<h3>
+						sprite-file
+					</h3>
+					<code class="language-javascript">@include sprite-file (file-name)</code>
+					<p>
+						Возвращает изображение, смещение и размер спрайта <code>file-name</code>, который находится в папке _<code>dir-name</code>, установленной последним вызовом <code>sprite-dir (dir-name)</code>.
+					</p>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>.Icon {
+	// Создаёт спрайт из всех .png внутри /images/themes/strap-docs/sprites/_browsers/
+	// /images/themes/strap-docs/sprites/browsers-sprite.png
+	@include sprite-dir ("browsers", "themes/strap-docs/sprites");
+
+	&.IE {
+		// Указывает на файл /images/themes/strap-docs/sprites/_browsers/ie.png
+		@include sprite-file("ie");
+	}
+}</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>.Icon.IE {
+	background: url(../images/themes/strap-docs/sprites/browsers-sprite.png) no-repeat;
+	background-position: 0 -84px;
+	height: 79px;
+	width: 84px;
+}</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+
+			</section>
+
+		</div>
+		<footer>
+			<div class="Container">
+				<h3 class="NoTopMargin">И это всё?</h3>
+
+				<div class="Row">
+					<div class="Col-4">
+						<div class="Content">
+							<p>
+								На самом деле, большая часть STRAP не описана в этом документе, хотя он уже получился излишне раздутым и совершенно непонятным.
+							</p>
+							<p>
+								Я обязательно это исправлю, а пока «исчерпывающую» документацию можно смотреть прямо в исходниках.
+							</p>
+						</div>
+					</div>
+					<div class="Col-4">
+						<div class="Content">
+							<p>
+								Номер версии намекает, что работа над STRAP только началась и мне не помешала бы ваша помощь.
+							</p>
+							<p>
+								При возникновении вопросов, предложений по STRAP — обращайтесь <a href="https://twitter.com/twenty" target="_blank">@twenty</a> с хэштегом #STRAPonSass.
+							</p>
+						</div>
+					</div>
+					<div class="Col-4">
+						<div class="Content">
+							<p>
+								Если вдруг вы владеете популярным европейским языком (английский, немецкий, испанский...) — вы можете оказать неоценимую помощь в переводе этой документации.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<a href="https://github.com/pfrankov/STRAP"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 9999" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+	</body>
+</html>

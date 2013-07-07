@@ -1,0 +1,14 @@
+// Default theme functions
+
+// +public
+@function pair-color($reference-color, $colors: $THEME_BRIGHTEST_COLOR $THEME_DARKEST_COLOR $THEME_BRIGHT_COLOR $THEME_DARK_COLOR $THEME_LAST_COLOR) {
+	$new-list: ();
+
+	@each $color in $colors {
+		@if ( $color != $reference-color ) {
+			$new-list: append($new-list, $color);
+		}
+	}
+
+	@return closest-color($reference-color, $new-list);
+}
