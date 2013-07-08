@@ -152,7 +152,7 @@
 								</h3>
 
 								<p>
-									Проект уже создан. Запустите <code class="language-css">executable/compass_watch.bat</code> и переходите уже скорее к разработке.
+									Проект уже создан. Запустите <code class="language-css">executable/compass_watch.bat</code> или <code class="language-css">executable/compass_watch.sh</code> и переходите уже скорее к разработке.
 								</p>
 							</article>
 						</div>
@@ -484,7 +484,7 @@
 @import "strap/ui/typography";
 @import "strap/ui/helpers";
 
-// Подключение классов для иконок entypo
+// Подключение классов для иконок Entypo
 @import "strap/ui/icons";
 @import "strap/ui/icons/entypo";
 
@@ -1056,6 +1056,2066 @@
 					</small>
 				</article>
 
+
+				<article>
+					<h2>
+						Иконки
+					</h2>
+
+					<div class="Row">
+						<div class="Col-6 Top">
+							<div class="Content">
+								<p>По-умолчанию, в STRAP встроены иконки <a href="http://entypo.com" target="_blank">Entypo</a>. Ну как встроены — их классы нужно подключать, чтобы работать с ними:</p>
+<pre class="language-css">
+<code>// Инициализация
+@import "strap/init";
+	...
+// Подключение классов для иконок Entypo
+@import "strap/ui/icons/entypo";
+	...</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+								<p class="TopMargin-2">
+									Этот вариант почти правильный. Почти, потому что внутри <code>/sass/strap/ui/icons/_entypo.scss</code> мы можем увидеть строчку <code>// @required ui/icons</code>.
+									Такая строчка означает, что перед тем, как подключить данный файл, нужно убедиться, что так же подключён <code>strap/ui/_icons.scss</code>.
+								</p>
+
+<pre class="language-css">
+<code>// Инициализация
+@import "strap/init";
+	...
+// Правильное подключение классов для иконок Entypo
+@import "strap/ui/icons";
+@import "strap/ui/icons/entypo";
+	...</code>
+</pre>
+							</div>
+						</div>
+					</div>
+
+
+
+					<h4>Использование иконок</h4>
+					<p>
+						<code class="language-markup">&lt;i class="Icon Entypo {EntypoIconClass}"&gt;&lt;/i&gt;</code>, где <code>{EntypoIconClass}</code> — это класс иконки из представленных ниже:
+					</p>
+
+
+					<div id="icons-list">
+					<div class="Row">
+
+
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Plus"></i><code>Plus</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Minus"></i><code>Minus</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Info"></i><code>Info</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftThin"></i><code>LeftThin</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpThin"></i><code>UpThin</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightThin"></i><code>RightThin</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownThin"></i><code>DownThin</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LevelUp"></i><code>LevelUp</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LevelDown"></i><code>LevelDown</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Switch"></i><code>Switch</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Infinity"></i><code>Infinity</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo PlusSquared"></i><code>PlusSquared</code>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo MinusSquared"></i><code>MinusSquared</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Home"></i><code>Home</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Keyboard"></i><code>Keyboard</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Erase"></i><code>Erase</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Pause"></i><code>Pause</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FastForward"></i><code>FastForward</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FastBackward"></i><code>FastBackward</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ToEnd"></i><code>ToEnd</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ToStart"></i><code>ToStart</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Hourglass"></i><code>Hourglass</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Stop"></i><code>Stop</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpDir"></i><code>UpDir</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Play"></i><code>Play</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightDir"></i><code>RightDir</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownDir"></i><code>DownDir</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftDir"></i><code>LeftDir</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Adjust"></i><code>Adjust</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cloud"></i><code>Cloud</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Star"></i><code>Star</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo StarEmpty"></i><code>StarEmpty</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cup"></i><code>Cup</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Menu"></i><code>Menu</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Moon"></i><code>Moon</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo HeartEmpty"></i><code>HeartEmpty</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Heart"></i><code>Heart</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Note"></i><code>Note</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo NoteBeamed"></i><code>NoteBeamed</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Layout"></i><code>Layout</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Flag"></i><code>Flag</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Tools"></i><code>Tools</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cog"></i><code>Cog</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Attention"></i><code>Attention</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Flash"></i><code>Flash</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Record"></i><code>Record</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CloudThunder"></i><code>CloudThunder</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Tape"></i><code>Tape</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Flight"></i><code>Flight</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Mail"></i><code>Mail</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Pencil"></i><code>Pencil</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Feather"></i><code>Feather</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Check"></i><code>Check</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cancel"></i><code>Cancel</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CancelCircled"></i><code>CancelCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CancelSquared"></i><code>CancelSquared</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Help"></i><code>Help</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Quote"></i><code>Quote</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo PlusCircled"></i><code>PlusCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo MinusCircled"></i><code>MinusCircled</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Right"></i><code>Right</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Direction"></i><code>Direction</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Forward"></i><code>Forward</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Ccw"></i><code>Ccw</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cw"></i><code>Cw</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Left"></i><code>Left</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Up"></i><code>Up</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Down"></i><code>Down</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ListAdd"></i><code>ListAdd</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo List"></i><code>List</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftBold"></i><code>LeftBold</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightBold"></i><code>RightBold</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpBold"></i><code>UpBold</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownBold"></i><code>DownBold</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UserAdd"></i><code>UserAdd</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo HelpCircled"></i><code>HelpCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo InfoCircled"></i><code>InfoCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Eye"></i><code>Eye</code>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Tag"></i><code>Tag</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UploadCloud"></i><code>UploadCloud</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Reply"></i><code>Reply</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ReplyAll"></i><code>ReplyAll</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Code"></i><code>Code</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Export"></i><code>Export</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Print"></i><code>Print</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Retweet"></i><code>Retweet</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Comment"></i><code>Comment</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Chat"></i><code>Chat</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Vcard"></i><code>Vcard</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Address"></i><code>Address</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Location"></i><code>Location</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Map"></i><code>Map</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Compass"></i><code>Compass</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Trash"></i><code>Trash</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Doc"></i><code>Doc</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DocTextInv"></i><code>DocTextInv</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Docs"></i><code>Docs</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DocLandscape"></i><code>DocLandscape</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Archive"></i><code>Archive</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Rss"></i><code>Rss</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Share"></i><code>Share</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Basket"></i><code>Basket</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Shareable"></i><code>Shareable</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Login"></i><code>Login</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Logout"></i><code>Logout</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Volume"></i><code>Volume</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ResizeFull"></i><code>ResizeFull</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ResizeSmall"></i><code>ResizeSmall</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Popup"></i><code>Popup</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Publish"></i><code>Publish</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Window"></i><code>Window</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ArrowCombo"></i><code>ArrowCombo</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ChartPie"></i><code>ChartPie</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Language"></i><code>Language</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Air"></i><code>Air</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Database"></i><code>Database</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Drive"></i><code>Drive</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Bucket"></i><code>Bucket</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Thermometer"></i><code>Thermometer</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownCircled"></i><code>DownCircled</code>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftCircled"></i><code>LeftCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightCircled"></i><code>RightCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpCircled"></i><code>UpCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownOpen"></i><code>DownOpen</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftOpen"></i><code>LeftOpen</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightOpen"></i><code>RightOpen</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpOpen"></i><code>UpOpen</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownOpenMini"></i><code>DownOpenMini</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftOpenMini"></i><code>LeftOpenMini</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightOpenMini"></i><code>RightOpenMini</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpOpenMini"></i><code>UpOpenMini</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DownOpenBig"></i><code>DownOpenBig</code>
+									</div>
+								</div>
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LeftOpenBig"></i><code>LeftOpenBig</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RightOpenBig"></i><code>RightOpenBig</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo UpOpenBig"></i><code>UpOpenBig</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Progress0"></i><code>Progress0</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Progress1"></i><code>Progress1</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Progress2"></i><code>Progress2</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Progress3"></i><code>Progress3</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo BackInTime"></i><code>BackInTime</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Network"></i><code>Network</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Inbox"></i><code>Inbox</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Install"></i><code>Install</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Lifebuoy"></i><code>Lifebuoy</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Mouse"></i><code>Mouse</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Dot"></i><code>Dot</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Dot2"></i><code>Dot2</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Dot3"></i><code>Dot3</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Suitcase"></i><code>Suitcase</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FlowCascade"></i><code>FlowCascade</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FlowBranch"></i><code>FlowBranch</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FlowTree"></i><code>FlowTree</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FlowLine"></i><code>FlowLine</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FlowParallel"></i><code>FlowParallel</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Brush"></i><code>Brush</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo PaperPlane"></i><code>PaperPlane</code>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Magnet"></i><code>Magnet</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Gauge"></i><code>Gauge</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo TrafficCone"></i><code>TrafficCone</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cc"></i><code>Cc</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcBy"></i><code>CcBy</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcNc"></i><code>CcNc</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcNcEu"></i><code>CcNcEu</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcNcJp"></i><code>CcNcJp</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcSa"></i><code>CcSa</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcNd"></i><code>CcNd</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcPd"></i><code>CcPd</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcZero"></i><code>CcZero</code>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcShare"></i><code>CcShare</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CcRemix"></i><code>CcRemix</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Github"></i><code>Github</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo GithubCircled"></i><code>GithubCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Flickr"></i><code>Flickr</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FlickrCircled"></i><code>FlickrCircled</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Vimeo"></i><code>Vimeo</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo VimeoCircled"></i><code>VimeoCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Twitter"></i><code>Twitter</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo TwitterCircled"></i><code>TwitterCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Facebook"></i><code>Facebook</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FacebookCircled"></i><code>FacebookCircled</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo FacebookSquared"></i><code>FacebookSquared</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Gplus"></i><code>Gplus</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo GplusCircled"></i><code>GplusCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Pinterest"></i><code>Pinterest</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo PinterestCircled"></i><code>PinterestCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Tumblr"></i><code>Tumblr</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo TumblrCircled"></i><code>TumblrCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Linkedin"></i><code>Linkedin</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LinkedinCircled"></i><code>LinkedinCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Dribbble"></i><code>Dribbble</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DribbbleCircled"></i><code>DribbbleCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Stumbleupon"></i><code>Stumbleupon</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo StumbleuponCircled"></i><code>StumbleuponCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Lastfm"></i><code>Lastfm</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LastfmCircled"></i><code>LastfmCircled</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Rdio"></i><code>Rdio</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo RdioCircled"></i><code>RdioCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Spotify"></i><code>Spotify</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo SpotifyCircled"></i><code>SpotifyCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Qq"></i><code>Qq</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Instagram"></i><code>Instagram</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Dropbox"></i><code>Dropbox</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Evernote"></i><code>Evernote</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Flattr"></i><code>Flattr</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Skype"></i><code>Skype</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo SkypeCircled"></i><code>SkypeCircled</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Renren"></i><code>Renren</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo SinaWeibo"></i><code>SinaWeibo</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Paypal"></i><code>Paypal</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Picasa"></i><code>Picasa</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Soundcloud"></i><code>Soundcloud</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Mixi"></i><code>Mixi</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Behance"></i><code>Behance</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo GoogleCircles"></i><code>GoogleCircles</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Vkontakte"></i><code>Vkontakte</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Smashing"></i><code>Smashing</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DbShape"></i><code>DbShape</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Sweden"></i><code>Sweden</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LogoDb"></i><code>LogoDb</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Picture"></i><code>Picture</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Globe"></i><code>Globe</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Leaf"></i><code>Leaf</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo GraduationCap"></i><code>GraduationCap</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Mic"></i><code>Mic</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Palette"></i><code>Palette</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Ticket"></i><code>Ticket</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Video"></i><code>Video</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Target"></i><code>Target</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Trophy"></i><code>Trophy</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ThumbsUp"></i><code>ThumbsUp</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ThumbsDown"></i><code>ThumbsDown</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Bag"></i><code>Bag</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo User"></i><code>User</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Users"></i><code>Users</code>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Lamp"></i><code>Lamp</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Alert"></i><code>Alert</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Water"></i><code>Water</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Droplet"></i><code>Droplet</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo CreditCard"></i><code>CreditCard</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Monitor"></i><code>Monitor</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Briefcase"></i><code>Briefcase</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Floppy"></i><code>Floppy</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Cd"></i><code>Cd</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Folder"></i><code>Folder</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo DocText"></i><code>DocText</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Calendar"></i><code>Calendar</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ChartLine"></i><code>ChartLine</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ChartBar"></i><code>ChartBar</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Clipboard"></i><code>Clipboard</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Attach"></i><code>Attach</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Bookmarks"></i><code>Bookmarks</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Book"></i><code>Book</code>
+									</div>
+								</div>
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo BookOpen"></i><code>BookOpen</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Phone"></i><code>Phone</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Megaphone"></i><code>Megaphone</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Upload"></i><code>Upload</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Download"></i><code>Download</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Box"></i><code>Box</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Newspaper"></i><code>Newspaper</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Mobile"></i><code>Mobile</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Signal"></i><code>Signal</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Camera"></i><code>Camera</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Shuffle"></i><code>Shuffle</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Loop"></i><code>Loop</code>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ArrowsCcw"></i><code>ArrowsCcw</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LightDown"></i><code>LightDown</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LightUp"></i><code>LightUp</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Mute"></i><code>Mute</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Sound"></i><code>Sound</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Battery"></i><code>Battery</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Search"></i><code>Search</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Key"></i><code>Key</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Lock"></i><code>Lock</code>
+									</div>
+								</div>
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo LockOpen"></i><code>LockOpen</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Bell"></i><code>Bell</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Bookmark"></i><code>Bookmark</code>
+									</div>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="Row">
+						<div class="Col-6 Middle Center">
+							<div class="Row NoBreak">
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Link"></i><code>Link</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Back"></i><code>Back</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Flashlight"></i><code>Flashlight</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo ChartArea"></i><code>ChartArea</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Clock"></i><code>Clock</code>
+									</div>
+								</div>
+
+								<div class="Col-1 Middle Center">
+									<div class="Content">
+										<i class="Icon Entypo Rocket"></i><code>Rocket</code>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="Col-1 Middle Center">
+							<div class="Content">
+								<i class="Icon Entypo Block"></i><code>Block</code>
+							</div>
+						</div>
+					</div>
+					</div>
+
+				</article>
+
 			</section>
 
 
@@ -1067,9 +3127,9 @@
 
 				<article>
 					<h3>
-						line ()
+						line()
 					</h3>
-					<code class="language-javascript">line ([lines: 1, font-size: px])</code>
+					<code class="language-javascript">line([lines: 1, font-size: px])</code>
 
 					<p>
 						Возвращает количество пикселей, соответствующее высоте <code>lines</code> линий для установленного размера шрифта <code>font-size</code>.
@@ -1082,19 +3142,19 @@
 							<div class="Content">
 <pre class="language-css">
 <code>/* 1 */
-margin-bottom: line (1);
+margin-bottom: line(1);
 /* 2 */
-margin-bottom: line (1, 20px);</code>
+margin-bottom: line(1, 20px);</code>
 </pre>
 							</div>
 						</div>
 						<div class="Col-6">
 							<div class="Content">
-<pre class="language-css">
+<pre class="language-css Compiled">
 <code>/* 1 */
-margin-bottom: 20.44px;
+margin-bottom: 20px;
 /* 2 */
-margin-bottom: 30.66px;</code>
+margin-bottom: 31px;</code>
 </pre>
 
 
@@ -1106,14 +3166,45 @@ margin-bottom: 30.66px;</code>
 
 				<article>
 					<h3>
-						gutter ()
+						gutter()
 					</h3>
-					<code class="language-javascript">gutter ([number: 1])</code>
+					<code class="language-javascript">gutter([number: 1])</code>
 
 					<p>
 						Возвращает указанное количество горизонтальных отступов, определяемых константой <code>$GUTTER_WIDTH</code>. Постарайтесь не использовать любые другие горизонтальные отступы.
 						Аргумент <code class="language-javascript">number</code> должен быть кратен 0.25
 					</p>
+				</article>
+
+				<article>
+					<h3>
+						shadow-steps()
+					</h3>
+					<code class="language-javascript">shadow-steps([x: 1, y: 1, color: #000, size: 0, depth: 1, inset: false])</code>
+					<p>
+						Создаёт серию теней, используемую свойствами <code>box-shadow</code> и <code>text-shadow</code>. Серия состоит из <code>depth</code> теней, каждая из которых представлена <code>(depth * x) (depth * y) color size inset</code>.
+						Используется для создания объёмных эффектов.
+					</p>
+
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>text-shadow: shadow-steps(1, 1, #000, 0, 4), #fff 1px 1px 10px;</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css Compiled">
+<code>text-shadow: 1px 1px 0px #000, 2px 2px 0px #000, 3px 3px 0px #000, 4px 4px 0px #000, #fff 1px 1px 10px;</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
 				</article>
 
 			</section>
@@ -1142,23 +3233,23 @@ margin-bottom: 30.66px;</code>
 							<div class="Content">
 <pre class="language-css">
 <code>/* 1 */
-@include font-size (20px);
+@include font-size(20px);
 /* 2 */
-@include font-size (20px, 2);</code>
+@include font-size(20px, 2);</code>
 </pre>
 							</div>
 						</div>
 						<div class="Col-6">
 							<div class="Content">
-<pre class="language-css">
+<pre class="language-css Compiled">
 <code>/* 1 */
 font-size: 20px;
 font-size: 1.42857rem;
-line-height: 30.66px;
+line-height: 31px;
 /* 2 */
 font-size: 20px;
 font-size: 1.42857rem;
-line-height: 56.21px;</code>
+line-height: 56px;</code>
 </pre>
 
 
@@ -1174,7 +3265,7 @@ line-height: 56.21px;</code>
 					<h3>
 						load-font
 					</h3>
-					<code class="language-javascript">@include load-font (name, file-name-without-extension[, weight[, style]])</code>
+					<code class="language-javascript">@include load-font(name, file-name-without-extension[, weight[, style]])</code>
 					<p>
 						Подключает файлы шрифтов из папки <code>/css/fonts/</code>. Шрифты одного начертания должны обладать единым именем <code>file-name-without-extension</code> и быть представлены в четырёх форматах: eot, svg, ttf, woff.
 						Насыщенность <code class="language-css">font-weight</code> и стиль <code class="language-css">font-style</code> задаются через аргументы <code>weight</code> и <code>style</code>.
@@ -1184,17 +3275,28 @@ line-height: 56.21px;</code>
 					<h3>
 						heading
 					</h3>
-					<code class="language-javascript">@include heading (top-lines, bottom-lines, font-size)</code>
+					<code class="language-javascript">@include heading(top-lines, bottom-lines, font-size)</code>
 					<p>
 						Устанавливает отступы в базовых линиях: сверху <code class="language-javascript">top-lines</code> и снизу <code class="language-javascript">bottom-lines</code>, а так же размер шрифта <code class="language-javascript">font-size</code> для заголовка.
 						Необходим для соблюдения заголовками вертикального ритма.
 					</p>
 				</article>
+
+				<article>
+					<h3>
+						all-headers
+					</h3>
+					<code class="language-javascript">@include all-headers { styles; }</code>
+					<p>
+						Позволяет задавать стили для h1, h2, h3, h4, h5, h6 сразу.
+					</p>
+				</article>
+
 				<article>
 					<h3>
 						breakpoint
 					</h3>
-					<code class="language-javascript">@include breakpoint (start[, end]) { styles; }</code>
+					<code class="language-javascript">@include breakpoint(start[, end]) { styles; }</code>
 					<p>
 						Создаёт контрольные точки разрешений экрана для адаптивной вёрстки, начиная с которых срабатывают заданные <code class="language-javascript">styles</code>.
 						Если указан второй аргумент, правила срабатывают в диапазоне разрешений от <code class="language-javascript">start</code> включительно до <code class="language-javascript">end</code> не включительно.<br/>
@@ -1205,7 +3307,7 @@ line-height: 56.21px;</code>
 						<div class="Col-6">
 							<div class="Content">
 <pre class="language-css">
-<code>@include breakpoint (phone landscape, tablet) {
+<code>@include breakpoint(phone landscape, tablet) {
 	.Content {
 		background: #c00;
 	}
@@ -1215,7 +3317,7 @@ line-height: 56.21px;</code>
 						</div>
 						<div class="Col-6">
 							<div class="Content">
-<pre class="language-css">
+<pre class="language-css Compiled">
 <code>@media only screen and (min-width: 480px) and (max-width: 959px) {
 	.Content {
 		background: #c00;
@@ -1230,11 +3332,12 @@ line-height: 56.21px;</code>
 					</div>
 
 				</article>
+
 				<article>
 					<h3>
 						sprite-dir
 					</h3>
-					<code class="language-javascript">@include sprite-dir (dir-name[, sprites-dir])</code>
+					<code class="language-javascript">@include sprite-dir(dir-name[, sprites-dir])</code>
 					<p>
 						Создаёт спрайт из png изображений папки _<code>dir-name (без префикса)</code>, находящейся в <code>sprites-dir</code> (по-умолчанию, в <code>/images/sprites/</code>). Используется со <code>sprite-file</code>.
 					</p>
@@ -1243,7 +3346,7 @@ line-height: 56.21px;</code>
 					<h3>
 						sprite-file
 					</h3>
-					<code class="language-javascript">@include sprite-file (file-name)</code>
+					<code class="language-javascript">@include sprite-file(file-name)</code>
 					<p>
 						Возвращает изображение, смещение и размер спрайта <code>file-name</code>, который находится в папке _<code>dir-name</code>, установленной последним вызовом <code>sprite-dir (dir-name)</code>.
 					</p>
@@ -1255,7 +3358,7 @@ line-height: 56.21px;</code>
 <code>.Icon {
 	// Создаёт спрайт из всех .png внутри /images/themes/strap-docs/sprites/_browsers/
 	// /images/themes/strap-docs/sprites/browsers-sprite.png
-	@include sprite-dir ("browsers", "themes/strap-docs/sprites");
+	@include sprite-dir("browsers", "themes/strap-docs/sprites");
 
 	&.IE {
 		// Указывает на файл /images/themes/strap-docs/sprites/_browsers/ie.png
@@ -1267,7 +3370,7 @@ line-height: 56.21px;</code>
 						</div>
 						<div class="Col-6">
 							<div class="Content">
-<pre class="language-css">
+<pre class="language-css Compiled">
 <code>.Icon.IE {
 	background: url(../images/themes/strap-docs/sprites/browsers-sprite.png) no-repeat;
 	background-position: 0 -84px;
@@ -1282,6 +3385,116 @@ line-height: 56.21px;</code>
 						</div>
 					</div>
 				</article>
+
+				<article>
+					<h3>
+						keyframes
+					</h3>
+					<code class="language-javascript">@include keyframes(name) { animations; }</code>
+					<p>
+						Полифил для описывания анимаций с именем <code>name</code>.
+					</p>
+<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>@include keyframes(cool-animation) {
+	0% {
+		top:0px;
+	}
+	100% {
+		top:200px;
+	}
+}</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css Compiled">
+<code>@-webkit-keyframes cool-animation {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+
+@-moz-keyframes cool-animation {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+
+@-o-keyframes cool-animation {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+
+@keyframes cool-animation {
+	0% {
+		top: 0px;
+	}
+	100% {
+		top: 200px;
+	}
+}</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</article>
+
+				<article>
+					<h3>
+						animation
+					</h3>
+					<code class="language-javascript">@include animation(animations);</code>
+					<p>
+						Полифил для добавления анимации элементу.
+					</p>
+					<div class="Row">
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css">
+<code>a {
+	@include animation(cool-animation 1s infinite, another-animation 2s);
+}</code>
+</pre>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+<pre class="language-css Compiled">
+<code>a {
+	-webkit-animation: cool-animation 1s infinite, another-animation 2s;
+	-moz-animation: cool-animation 1s infinite, another-animation 2s;
+	-o-animation: cool-animation 1s infinite, another-animation 2s;
+	animation: cool-animation 1s infinite, another-animation 2s;
+}</code>
+</pre>
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</article>
+
+
 
 
 

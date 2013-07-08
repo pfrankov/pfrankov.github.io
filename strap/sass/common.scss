@@ -187,3 +187,47 @@ ul.NoStyle.All {
 		}
 	}
 }
+
+pre[class*="language-"].Compiled {
+	background: #ECF0F5;
+}
+
+#icons-list {
+	.Content {
+		position: relative;
+		z-index: 1;
+
+		i {
+			z-index: 4;
+			@include font-size(24px);
+			@include transition(color $ANIMATION_TIME);
+			display: block;
+		}
+
+		code {
+			position: relative;
+			opacity: 0;
+			padding: line(1) gutter(1);
+			@include transition(opacity $ANIMATION_TIME);
+			@include font-size(12px);
+
+			z-index: -999999;
+			@include transition (z-index 0s $ANIMATION_TIME, opacity $ANIMATION_TIME);
+		}
+
+		&:hover {
+			z-index: 2;
+
+			i {
+				color: $THEME_DARK_COLOR;
+			}
+
+			code {
+				opacity: 1;
+				z-index: 2;
+				@include transition(opacity $ANIMATION_TIME);
+			}
+		}
+	}
+
+}

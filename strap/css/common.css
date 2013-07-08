@@ -8,12 +8,12 @@
 *   Fork me on Github: https://github.com/pfrankov/strap
 *
 */
-/* line 61, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 61, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 87.5%;
 }
 
-/* line 64, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+/* line 64, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 14px;
   line-height: 1.46em;
@@ -291,7 +291,7 @@ table {
   margin: auto;
   display: table;
   border: none;
-  margin-bottom: 10.22px;
+  margin-bottom: 10px;
 }
 /* line 26, ../sass/strap/strap-lib/__mixins.scss */
 .Row:after {
@@ -1057,7 +1057,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-1[class*="Offset-"] {
@@ -1074,7 +1074,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-2[class*="Offset-"] {
@@ -1091,7 +1091,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-3[class*="Offset-"] {
@@ -1108,7 +1108,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-4[class*="Offset-"] {
@@ -1125,7 +1125,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-5[class*="Offset-"] {
@@ -1142,7 +1142,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-6[class*="Offset-"] {
@@ -1159,7 +1159,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-7[class*="Offset-"] {
@@ -1176,7 +1176,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-8[class*="Offset-"] {
@@ -1193,7 +1193,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-9[class*="Offset-"] {
@@ -1210,7 +1210,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-10[class*="Offset-"] {
@@ -1227,7 +1227,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-11[class*="Offset-"] {
@@ -1244,7 +1244,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row:not(.Break):not(.NoBreak) > .Col-12[class*="Offset-"] {
@@ -1277,7 +1277,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-1[class*="Offset-"] {
@@ -1294,7 +1294,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-2[class*="Offset-"] {
@@ -1311,7 +1311,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-3[class*="Offset-"] {
@@ -1328,7 +1328,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-4[class*="Offset-"] {
@@ -1345,7 +1345,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-5[class*="Offset-"] {
@@ -1362,7 +1362,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-6[class*="Offset-"] {
@@ -1379,7 +1379,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-7[class*="Offset-"] {
@@ -1396,7 +1396,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-8[class*="Offset-"] {
@@ -1413,7 +1413,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-9[class*="Offset-"] {
@@ -1430,7 +1430,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-10[class*="Offset-"] {
@@ -1447,7 +1447,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-11[class*="Offset-"] {
@@ -1464,7 +1464,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Break > .Col-12[class*="Offset-"] {
@@ -1502,7 +1502,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-1[class*="Offset-"] {
@@ -1519,7 +1519,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-2[class*="Offset-"] {
@@ -1536,7 +1536,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-3[class*="Offset-"] {
@@ -1553,7 +1553,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-4[class*="Offset-"] {
@@ -1570,7 +1570,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-5[class*="Offset-"] {
@@ -1587,7 +1587,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-6[class*="Offset-"] {
@@ -1604,7 +1604,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-7[class*="Offset-"] {
@@ -1621,7 +1621,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-8[class*="Offset-"] {
@@ -1638,7 +1638,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-9[class*="Offset-"] {
@@ -1655,7 +1655,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-10[class*="Offset-"] {
@@ -1672,7 +1672,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-11[class*="Offset-"] {
@@ -1689,7 +1689,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Phone.Landscape.Break > .Col-12[class*="Offset-"] {
@@ -1727,7 +1727,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-1[class*="Offset-"] {
@@ -1744,7 +1744,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-2[class*="Offset-"] {
@@ -1761,7 +1761,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-3[class*="Offset-"] {
@@ -1778,7 +1778,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-4[class*="Offset-"] {
@@ -1795,7 +1795,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-5[class*="Offset-"] {
@@ -1812,7 +1812,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-6[class*="Offset-"] {
@@ -1829,7 +1829,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-7[class*="Offset-"] {
@@ -1846,7 +1846,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-8[class*="Offset-"] {
@@ -1863,7 +1863,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-9[class*="Offset-"] {
@@ -1880,7 +1880,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-10[class*="Offset-"] {
@@ -1897,7 +1897,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-11[class*="Offset-"] {
@@ -1914,7 +1914,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Break > .Col-12[class*="Offset-"] {
@@ -1952,7 +1952,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-1[class*="Offset-"] {
@@ -1969,7 +1969,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-2[class*="Offset-"] {
@@ -1986,7 +1986,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-3[class*="Offset-"] {
@@ -2003,7 +2003,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-4[class*="Offset-"] {
@@ -2020,7 +2020,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-5[class*="Offset-"] {
@@ -2037,7 +2037,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-6[class*="Offset-"] {
@@ -2054,7 +2054,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-7[class*="Offset-"] {
@@ -2071,7 +2071,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-8[class*="Offset-"] {
@@ -2088,7 +2088,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-9[class*="Offset-"] {
@@ -2105,7 +2105,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-10[class*="Offset-"] {
@@ -2122,7 +2122,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-11[class*="Offset-"] {
@@ -2139,7 +2139,7 @@ table {
     width: 100%;
     display: block;
     padding-left: 0;
-    margin-bottom: 10.22px;
+    margin-bottom: 10px;
   }
   /* line 93, ../sass/strap/strap-lib/ui/_grid.scss */
   .Row.Tablet.Landscape.Break > .Col-12[class*="Offset-"] {
@@ -2205,7 +2205,7 @@ h1 {
   font-size: 2.7rem;
   margin-top: 61.32px;
   margin-bottom: 40.88px;
-  line-height: 40.88px;
+  line-height: 41px;
 }
 
 /* line 13, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2214,7 +2214,7 @@ h2 {
   font-size: 2.3rem;
   margin-top: 40.88px;
   margin-bottom: 20.44px;
-  line-height: 35.77px;
+  line-height: 36px;
 }
 
 /* line 16, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2223,7 +2223,7 @@ h3 {
   font-size: 1.7rem;
   margin-top: 30.66px;
   margin-bottom: 10.22px;
-  line-height: 25.55px;
+  line-height: 26px;
 }
 
 /* line 19, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2232,7 +2232,7 @@ h4 {
   font-size: 1.3rem;
   margin-top: 20.44px;
   margin-bottom: 10.22px;
-  line-height: 20.44px;
+  line-height: 20px;
 }
 
 /* line 22, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2241,7 +2241,7 @@ h5 {
   font-size: 1rem;
   margin-top: 20.44px;
   margin-bottom: 10.22px;
-  line-height: 15.33px;
+  line-height: 15px;
 }
 
 /* line 25, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2250,7 +2250,7 @@ h6 {
   font-size: 0.8rem;
   margin-top: 20.44px;
   margin-bottom: 10.22px;
-  line-height: 10.22px;
+  line-height: 10px;
 }
 
 /* line 74, ../sass/strap/strap-lib/mixins/__typography.scss */
@@ -2297,8 +2297,8 @@ ul:last-child {
 
 /* line 47, ../sass/strap/strap-lib/ui/_typography.scss */
 p {
-  line-height: 20.44px;
-  margin: 10.22px 0;
+  line-height: 20px;
+  margin: 10px 0;
 }
 
 /* line 51, ../sass/strap/strap-lib/ui/_typography.scss */
@@ -2306,14 +2306,14 @@ small {
   display: block;
   font-size: 10.5px;
   font-size: 0.75rem;
-  line-height: 15.33px;
+  line-height: 15px;
 }
 
 /* line 56, ../sass/strap/strap-lib/ui/_typography.scss */
 ol,
 ul {
-  margin-top: 10.22px;
-  margin-bottom: 10.22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding-left: 20px;
 }
 
@@ -2343,111 +2343,92 @@ ul {
 }
 
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-1 {
-  margin-top: 20.44px;
+body .TopMargin-1 {
+  margin-top: 20px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-1 {
-  margin-bottom: 20.44px;
+body .BottomMargin-1 {
+  margin-bottom: 20px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-2 {
-  margin-top: 40.88px;
+body .TopMargin-2 {
+  margin-top: 41px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-2 {
-  margin-bottom: 40.88px;
+body .BottomMargin-2 {
+  margin-bottom: 41px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-3 {
-  margin-top: 61.32px;
+body .TopMargin-3 {
+  margin-top: 61px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-3 {
-  margin-bottom: 61.32px;
+body .BottomMargin-3 {
+  margin-bottom: 61px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-4 {
-  margin-top: 81.76px;
+body .TopMargin-4 {
+  margin-top: 82px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-4 {
-  margin-bottom: 81.76px;
+body .BottomMargin-4 {
+  margin-bottom: 82px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-5 {
-  margin-top: 102.2px;
+body .TopMargin-5 {
+  margin-top: 102px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-5 {
-  margin-bottom: 102.2px;
+body .BottomMargin-5 {
+  margin-bottom: 102px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-6 {
-  margin-top: 122.64px;
+body .TopMargin-6 {
+  margin-top: 123px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-6 {
-  margin-bottom: 122.64px;
+body .BottomMargin-6 {
+  margin-bottom: 123px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-7 {
-  margin-top: 143.08px;
+body .TopMargin-7 {
+  margin-top: 143px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-7 {
-  margin-bottom: 143.08px;
+body .BottomMargin-7 {
+  margin-bottom: 143px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-8 {
-  margin-top: 163.52px;
+body .TopMargin-8 {
+  margin-top: 164px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-8 {
-  margin-bottom: 163.52px;
+body .BottomMargin-8 {
+  margin-bottom: 164px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-9 {
-  margin-top: 183.96px;
+body .TopMargin-9 {
+  margin-top: 184px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-9 {
-  margin-bottom: 183.96px;
+body .BottomMargin-9 {
+  margin-bottom: 184px;
 }
-
 /* line 18, ../sass/strap/strap-lib/ui/_helpers.scss */
-.TopMargin-10 {
-  margin-top: 204.4px;
+body .TopMargin-10 {
+  margin-top: 204px;
 }
-
 /* line 21, ../sass/strap/strap-lib/ui/_helpers.scss */
-.BottomMargin-10 {
-  margin-bottom: 204.4px;
+body .BottomMargin-10 {
+  margin-bottom: 204px;
 }
 
-/* line 28, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 29, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.NoStyle, ul.NoStyle.All ul {
   list-style: none;
 }
 
-/* line 38, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 39, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal {
   zoom: 1;
   margin: 0;
@@ -2462,26 +2443,26 @@ ul.Horizontal:after {
   height: 0;
   visibility: hidden;
 }
-/* line 44, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 45, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal > li {
   list-style: none;
   display: inline-block;
   margin: 0 0 0 20px;
 }
-/* line 50, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 51, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal > li:first-child {
   margin: 0;
 }
-/* line 55, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 56, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal.Center {
   display: inline-block;
 }
-/* line 58, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 59, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Horizontal.Right {
   float: right;
 }
 
-/* line 63, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 64, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Justify {
   zoom: 1;
   margin-bottom: -1em;
@@ -2497,7 +2478,7 @@ ul.Justify:after {
   height: 0;
   visibility: hidden;
 }
-/* line 72, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 73, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Justify:after {
   width: 100%;
   height: 0px;
@@ -2511,7 +2492,7 @@ ul.Justify:after {
   zoom: 1;
   *display: inline;
 }
-/* line 82, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 83, ../sass/strap/strap-lib/ui/_helpers.scss */
 ul.Justify li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -2522,11 +2503,11 @@ ul.Justify li {
   text-align: left;
 }
 
-/* line 90, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 91, ../sass/strap/strap-lib/ui/_helpers.scss */
 .Sticky.Clone {
   visibility: hidden;
 }
-/* line 94, ../sass/strap/strap-lib/ui/_helpers.scss */
+/* line 95, ../sass/strap/strap-lib/ui/_helpers.scss */
 .Sticky.Stick {
   position: fixed;
   top: 0;
@@ -2536,8 +2517,8 @@ ul.Justify li {
 table.Table {
   width: 100%;
   border-collapse: separate;
-  margin-top: 20.44px;
-  margin-bottom: 20.44px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* line 11, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table thead,
@@ -2548,7 +2529,7 @@ table.Table tbody {
 /* line 19, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table th,
 table.Table td {
-  padding: 10.22px 10px;
+  padding: 10px 10px;
 }
 /* line 22, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table th.Center,
@@ -2569,7 +2550,7 @@ table.Table td.Right {
 table.Table th {
   font-size: 16.8px;
   font-size: 1.2rem;
-  line-height: 25.55px;
+  line-height: 26px;
 }
 /* line 37, ../sass/strap/strap-lib/ui/_tables.scss */
 table.Table td {
@@ -3752,7 +3733,7 @@ table.Table td {
 .Button {
   display: inline-block;
   position: relative;
-  padding: 10.22px 20px;
+  padding: 10px 20px;
   line-height: 1.46em;
   text-align: center;
   color: #fff;
@@ -3878,7 +3859,7 @@ body > footer {
   transition: box-shadow ease-out 0.3s;
   background: #242a37;
   position: relative;
-  padding: 25.55px 0;
+  padding: 26px 0;
   width: 100%;
   z-index: 10;
 }
@@ -3887,7 +3868,7 @@ body > header ul.Horizontal,
 body > footer ul.Horizontal {
   font-size: 18.2px;
   font-size: 1.3rem;
-  line-height: 25.55px;
+  line-height: 26px;
 }
 /* line 25, ../sass/strap/themes/strap-docs/ui/_theme.scss */
 body > header a,
@@ -3902,12 +3883,12 @@ body > footer a {
   -o-transition: color ease-out 0.3s;
   transition: color ease-out 0.3s;
 }
-/* line 24, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body > header a:hover,
 body > footer a:hover {
   color: white;
 }
-/* line 27, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 body > header a:active,
 body > footer a:active {
   color: #0167b3;
@@ -3937,8 +3918,8 @@ body > header h6 {
 }
 /* line 47, ../sass/strap/themes/strap-docs/ui/_theme.scss */
 body > footer {
-  margin-top: 40.88px;
-  padding: 40.88px 0;
+  margin-top: 41px;
+  padding: 41px 0;
   color: #9b9b9b;
   text-shadow: #161921 -1px -1px 0;
 }
@@ -3981,11 +3962,11 @@ body {
 a {
   color: #0167b3;
 }
-/* line 24, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #dd1111;
 }
-/* line 27, ../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../../Ruby/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #0167b3;
 }
@@ -4025,23 +4006,23 @@ body #content .Container > h2 {
 /* line 85, ../sass/common.scss */
 #strap-on-logo {
   background: #a63737;
-  padding: 81.76px 0 122.64px;
+  padding: 82px 0 123px;
 }
 /* line 90, ../sass/common.scss */
 #strap-on-logo h1 {
   text-shadow:  1px 1px 0px #872d2d,  2px 2px 0px #872d2d,  3px 3px 0px #872d2d,  4px 4px 0px #872d2d;
   font-size: 84px;
   font-size: 6rem;
-  line-height: 91.98px;
+  line-height: 92px;
   color: #fff;
-  margin: 40.88px 0 20.44px;
+  margin: 41px 0 20px;
 }
 /* line 98, ../sass/common.scss */
 #strap-on-logo h1 b {
   margin: 0 -.1em;
   font-size: 56px;
   font-size: 4rem;
-  line-height: 81.76px;
+  line-height: 82px;
   line-height: 0;
 }
 /* line 104, ../sass/common.scss */
@@ -4059,7 +4040,7 @@ body #content .Container > h2 {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
-  padding: 10.22px 0;
+  padding: 10px 0;
   width: 100%;
   background: #ddd;
   cursor: default;
@@ -4101,7 +4082,7 @@ ul.NoStyle.All .Open {
 }
 /* line 167, ../sass/common.scss */
 ul.NoStyle.All li {
-  margin-bottom: 5.11px;
+  margin-bottom: 5px;
 }
 /* line 170, ../sass/common.scss */
 ul.NoStyle.All li span.Actions.ShowMore {
@@ -4118,6 +4099,64 @@ ul.NoStyle.All li span.Actions.ShowMore {
   /* line 183, ../sass/common.scss */
   #strap-on-logo h1 {
     line-height: 1;
-    margin-bottom: 81.76px;
+    margin-bottom: 82px;
   }
+}
+/* line 191, ../sass/common.scss */
+pre[class*="language-"].Compiled {
+  background: #ECF0F5;
+}
+
+/* line 196, ../sass/common.scss */
+#icons-list .Content {
+  position: relative;
+  z-index: 1;
+}
+/* line 200, ../sass/common.scss */
+#icons-list .Content i {
+  z-index: 4;
+  font-size: 24px;
+  font-size: 1.71429rem;
+  line-height: 36px;
+  -webkit-transition: color 0.75s;
+  -moz-transition: color 0.75s;
+  -o-transition: color 0.75s;
+  transition: color 0.75s;
+  display: block;
+}
+/* line 207, ../sass/common.scss */
+#icons-list .Content code {
+  position: relative;
+  opacity: 0;
+  padding: 20px 20px;
+  -webkit-transition: opacity 0.75s;
+  -moz-transition: opacity 0.75s;
+  -o-transition: opacity 0.75s;
+  transition: opacity 0.75s;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 15px;
+  z-index: -999999;
+  -webkit-transition: z-index 0s, opacity 0.75s;
+  -webkit-transition-delay: 0.75s, 0s;
+  -moz-transition: z-index 0s 0.75s, opacity 0.75s;
+  -o-transition: z-index 0s 0.75s, opacity 0.75s;
+  transition: z-index 0s 0.75s, opacity 0.75s;
+}
+/* line 218, ../sass/common.scss */
+#icons-list .Content:hover {
+  z-index: 2;
+}
+/* line 221, ../sass/common.scss */
+#icons-list .Content:hover i {
+  color: #a63737;
+}
+/* line 225, ../sass/common.scss */
+#icons-list .Content:hover code {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transition: opacity 0.75s;
+  -moz-transition: opacity 0.75s;
+  -o-transition: opacity 0.75s;
+  transition: opacity 0.75s;
 }

@@ -4,7 +4,7 @@
 		$font-size: relative-to-px($font-size);
 	}
 
-	@return $font-size * remove-units(_line-relative($lines, $font-size));
+	@return round($font-size * remove-units(_line-relative($lines, $font-size)));
 }
 
 // +public
