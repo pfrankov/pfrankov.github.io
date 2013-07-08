@@ -4111,8 +4111,9 @@ pre[class*="language-"].Compiled {
 #icons-list .Content {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
-/* line 200, ../sass/common.scss */
+/* line 202, ../sass/common.scss */
 #icons-list .Content i {
   z-index: 4;
   font-size: 24px;
@@ -4124,11 +4125,10 @@ pre[class*="language-"].Compiled {
   transition: color 0.75s;
   display: block;
 }
-/* line 207, ../sass/common.scss */
+/* line 209, ../sass/common.scss */
 #icons-list .Content code {
   position: relative;
   opacity: 0;
-  padding: 20px 20px;
   -webkit-transition: opacity 0.75s;
   -moz-transition: opacity 0.75s;
   -o-transition: opacity 0.75s;
@@ -4136,27 +4136,18 @@ pre[class*="language-"].Compiled {
   font-size: 12px;
   font-size: 0.85714rem;
   line-height: 15px;
-  z-index: -999999;
-  -webkit-transition: z-index 0s, opacity 0.75s;
-  -webkit-transition-delay: 0.75s, 0s;
-  -moz-transition: z-index 0s 0.75s, opacity 0.75s;
-  -o-transition: z-index 0s 0.75s, opacity 0.75s;
-  transition: z-index 0s 0.75s, opacity 0.75s;
 }
-/* line 218, ../sass/common.scss */
+/* line 216, ../sass/common.scss */
 #icons-list .Content:hover {
+  overflow: visible;
   z-index: 2;
 }
-/* line 221, ../sass/common.scss */
+/* line 220, ../sass/common.scss */
 #icons-list .Content:hover i {
   color: #a63737;
 }
-/* line 225, ../sass/common.scss */
+/* line 224, ../sass/common.scss */
 #icons-list .Content:hover code {
   opacity: 1;
   z-index: 2;
-  -webkit-transition: opacity 0.75s;
-  -moz-transition: opacity 0.75s;
-  -o-transition: opacity 0.75s;
-  transition: opacity 0.75s;
 }

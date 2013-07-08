@@ -22,6 +22,7 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	font-size: 12px;
 }
 
 /* Code blocks */
@@ -29,7 +30,6 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-	font-size: 12px;
 }
 
 :not(pre) > code,
