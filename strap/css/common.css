@@ -4032,8 +4032,42 @@ body #content .Container > h2 {
   background: #d95f43;
   outline: 15px solid #d95f43;
 }
+/* line 114, ../sass/common.scss */
+#strap-on-logo .i100500n {
+  opacity: 0;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  -webkit-transition: all ease-out;
+  -webkit-transition-delay: 0.75s;
+  -moz-transition: all ease-out 0.75s;
+  -o-transition: all ease-out 0.75s;
+  transition: all ease-out 0.75s;
+  text-align: center;
+  color: #fff;
+}
+/* line 129, ../sass/common.scss */
+#strap-on-logo .i100500n.Active {
+  opacity: 1;
+  height: 3em;
+}
+/* line 134, ../sass/common.scss */
+#strap-on-logo .i100500n span {
+  font-size: 28px;
+  font-size: 2rem;
+  line-height: 41px;
+  font-weight: bold;
+  width: 1.5em;
+  display: inline-block;
+  text-align: right;
+}
 
-/* line 116, ../sass/common.scss */
+/* line 145, ../sass/common.scss */
 .Content.Colored {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -4047,7 +4081,7 @@ body #content .Container > h2 {
   outline: #aaa solid 1px;
   color: #555;
 }
-/* line 130, ../sass/common.scss */
+/* line 159, ../sass/common.scss */
 .Content.Colored:hover {
   -webkit-box-shadow: rgba(242, 152, 99, 0) 1px 1px 0;
   -moz-box-shadow: rgba(242, 152, 99, 0) 1px 1px 0;
@@ -4056,64 +4090,64 @@ body #content .Container > h2 {
   background: #fad6c1;
   color: #ae490e;
 }
-/* line 144, ../sass/common.scss */
+/* line 173, ../sass/common.scss */
 .Content.Colored .Content.Colored {
   background: #ccc;
 }
-/* line 147, ../sass/common.scss */
+/* line 176, ../sass/common.scss */
 .Content.Colored .Content.Colored:hover {
   background: white;
   color: #f29863;
 }
 
-/* line 155, ../sass/common.scss */
+/* line 184, ../sass/common.scss */
 i[title],
 b[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 161, ../sass/common.scss */
+/* line 190, ../sass/common.scss */
 ul.NoStyle.All, ul.NoStyle.All ul.All {
   cursor: default;
 }
-/* line 164, ../sass/common.scss */
+/* line 193, ../sass/common.scss */
 ul.NoStyle.All .Open {
   color: #888;
 }
-/* line 167, ../sass/common.scss */
+/* line 196, ../sass/common.scss */
 ul.NoStyle.All li {
   margin-bottom: 5px;
 }
-/* line 170, ../sass/common.scss */
+/* line 199, ../sass/common.scss */
 ul.NoStyle.All li span.Actions.ShowMore {
   display: block;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 177, ../sass/common.scss */
+  /* line 206, ../sass/common.scss */
   #strap-on-logo {
     text-align: center;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 183, ../sass/common.scss */
+  /* line 212, ../sass/common.scss */
   #strap-on-logo h1 {
     line-height: 1;
     margin-bottom: 82px;
   }
 }
-/* line 191, ../sass/common.scss */
+/* line 220, ../sass/common.scss */
 pre[class*="language-"].Compiled {
   background: #ECF0F5;
 }
 
-/* line 196, ../sass/common.scss */
+/* line 225, ../sass/common.scss */
 #icons-list .Content {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-/* line 202, ../sass/common.scss */
+/* line 231, ../sass/common.scss */
 #icons-list .Content i {
   z-index: 4;
   font-size: 24px;
@@ -4125,7 +4159,7 @@ pre[class*="language-"].Compiled {
   transition: color 0.75s;
   display: block;
 }
-/* line 209, ../sass/common.scss */
+/* line 238, ../sass/common.scss */
 #icons-list .Content code {
   position: relative;
   opacity: 0;
@@ -4137,16 +4171,16 @@ pre[class*="language-"].Compiled {
   font-size: 0.85714rem;
   line-height: 15px;
 }
-/* line 216, ../sass/common.scss */
+/* line 245, ../sass/common.scss */
 #icons-list .Content:hover {
   overflow: visible;
   z-index: 2;
 }
-/* line 220, ../sass/common.scss */
+/* line 249, ../sass/common.scss */
 #icons-list .Content:hover i {
   color: #a63737;
 }
-/* line 224, ../sass/common.scss */
+/* line 253, ../sass/common.scss */
 #icons-list .Content:hover code {
   opacity: 1;
   z-index: 2;

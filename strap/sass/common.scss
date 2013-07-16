@@ -110,6 +110,35 @@ body {
 		background: $color;
 		outline: gutter(0.75) solid $color;
 	}
+
+	.i100500n {
+		opacity: 0;
+		height: 0;
+		position: relative;
+		overflow: hidden;
+
+		font-weight: normal;
+		@include font-size(1rem);
+		text-transform: uppercase;
+		@include transition(all ease-out $ANIMATION_TIME);
+
+
+		text-align: center;
+		color: #fff;
+
+		&.Active {
+			opacity: 1;
+			height: 3em;
+		}
+
+		span {
+			@include font-size(2rem);
+			font-weight: bold;
+			width: 1.5em;
+			display: inline-block;
+			text-align: right;
+		}
+	}
 }
 
 
