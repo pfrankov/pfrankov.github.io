@@ -10,11 +10,23 @@
 
 
 
-		<link rel="stylesheet" href="css/combined.css">
+		<!-- build:css css/combined.css -->
+		<link href="sass/common.css" rel="stylesheet" />
+		<link href="css/prism.css" rel="stylesheet" />
+		<!-- endbuild -->
 		
-		<script src="js/vendor.js"></script>
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<script src="js/i100500n.js"></script>
+		<script src="js/lang/en.js"></script>
+		<script src="js/prism.js"></script>
+		<!-- endbuild -->
 
-		<script src="js/combined.js"></script>
+		<!-- build:js js/combined.js -->
+		<script src="js/common.js"></script>
+		<!-- endbuild -->
 
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -70,7 +82,7 @@
 						<div class="Col-9"></div>
 						<div class="Col-3">
 							<div class="Content">
-								<a href="https://github.com/pfrankov/STRAP/archive/master.zip" class="Button Dark"><i class="Icon Entypo Download"></i> <span data-lang-key="download">Скачать</span> v0.1</a>
+								<a href="https://github.com/pfrankov/STRAP/archive/master.zip" class="Button Dark"><i class="Icon Entypo Download"></i> <span data-lang-key="download">Скачать</span></a>
 							</div>
 						</div>
 					</div>
@@ -147,13 +159,13 @@
 								</p>
 								<p>
 									<span data-lang-key="basics.requirements.t2">После чего в командной строке:</span><br/>
-									<code>npm install -g grunt-cli</code><br />
-									<code>npm install -g bower</code><br />
-									<code>gem install compass</code><br />
+									<pre class="language-css"><code>npm install -g grunt-cli</code></pre>
+									<pre class="language-css"><code>npm install -g bower</code></pre>
+									<pre class="language-css"><code>gem install compass</code></pre>
 									
 									<span data-lang-key="basics.requirements.t2">И далее в папке проекта:</span><br/>
-									<code>npm install</code><br />
-									<code>bower install</code>
+									<pre class="language-css"><code>npm install</code></pre>
+									<pre class="language-css"><code>bower install</code></pre>
 								</p>
 							</article>
 						</div>
@@ -169,8 +181,8 @@
 								<p>
 									<span data-lang-key="basics.createproject.t1">В папке проекта выполните команду:</span><br/>
 									
-									<code>grunt serve</code> <span data-lang-key="basics.createproject.server">чтобы запустить локальный сервер для разработки</span><br/>
-									<code>grunt serve:test</code> <span data-lang-key="basics.createproject.tests">чтобы сделать то же самое, но и отслеживать тесты</span><br/>
+									<pre class="language-css"><code>grunt serve</code></pre> <span data-lang-key="basics.createproject.server">чтобы запустить локальный сервер для разработки</span><br/>
+									<pre class="language-css"><code>grunt serve:test</code></pre> <span data-lang-key="basics.createproject.tests">чтобы сделать то же самое, но и отслеживать тесты</span><br/>
 									<code>grunt</code> <span data-lang-key="basics.createproject.or">или</span> <code>grunt build</code> <span data-lang-key="basics.createproject.build">чтобы собрать проект в папку</span> <code>dist</code><span data-lang-key="basics.createproject.dir"></span>.
 								</p>
 							</article>
@@ -235,41 +247,6 @@
 									Практически всё содержимое <code>/sass/strap/</code>, за исключением <code>/sass/strap/strap-lib/</code> является пользовательским расширением существующих в STRAP примесей, функций, конфигов и т.п.
 
 								</p>
-								
-							</div>
-						</div>
-						<div class="Col-6">
-							<div class="Content">
-								<h4 class="NoTopMargin" data-lang-key="basics.structure.initialization">
-									Как выглядит типичная инициализация
-								</h4>
-<pre class="language-css">
-<code>// <span data-lang-key="basics.structure.initialization.init">Инициализация</span>
-@import "strap/__init";
-
-// <span data-lang-key="basics.structure.initialization.normalize">Нормализатор</span>
-@import "strap/strap-lib/misc/_normalize";
-
-// <span data-lang-key="basics.structure.initialization.helpers">Подключение классов для сеток, текста и прочего</span>
-	@import "strap/strap-lib/ui/_grid";
-	@import "strap/strap-lib/ui/_buttons";
-	@import "strap/strap-lib/ui/_controls";
-	@import "strap/strap-lib/ui/_forms";
-	@import "strap/strap-lib/ui/_typography";
-	@import "strap/strap-lib/ui/_helpers";
-	@import "strap/strap-lib/ui/_icons";
-	@import "strap/strap-lib/ui/_tables";
-
-// <span data-lang-key="basics.structure.initialization.icons">Подключение классов для иконок Entypo</span>
-@import "strap/ui/icons";
-@import "strap/ui/icons/entypo";
-
-// <span data-lang-key="basics.structure.initialization.buttons">Подключение стандартных классов кнопок, которые
-   требует тема</span>
-@import "strap/ui/buttons";
-// <span data-lang-key="basics.structure.initialization.theme">Инициализация темы STRAPDocs</span>
-@import "strap/themes/strap-docs/init";</code>
-</pre>
 
 								<h4 data-lang-key="basics.structure.advices">
 									Некоторые советы по поддержанию структуры
@@ -283,6 +260,32 @@
 									<li data-lang-key="basics.structure.advices.t5">Файлы тем не должны ничего запрашивать из родительских директорий; вместо этого следует указывать запрашиваемые файлы в описание темы;</li>
 									<li data-lang-key="basics.structure.advices.t6">Крайне не рекомендуется менять содержимое в папке <code>/sass/strap/strap-lib</code> — любое поведение можно переопределить в пользовательских файлах.</li>
 								</ul>
+							</div>
+						</div>
+						<div class="Col-6">
+							<div class="Content">
+								<h4 class="NoTopMargin" data-lang-key="basics.structure.initialization">
+									Как выглядит типичная инициализация
+								</h4>
+<pre class="language-css">
+<code>// <span data-lang-key="basics.structure.initialization.init">Инициализация</span>
+@import "strap/__init";
+
+// <span data-lang-key="basics.structure.initialization.include">Вы можете подключить все ui-компоненты одной строкой</span>
+@import "strap/_imports";
+// <span data-lang-key="basics.structure.initialization.separately">...или выборочно</span>
+@import "strap/strap-lib/misc/_normalize";
+@import "strap/strap-lib/ui/_grid";
+@import "strap/strap-lib/ui/_typography";
+@import "strap/strap-lib/ui/_icons";
+
+// <span data-lang-key="basics.structure.initialization.theme">Можете подключить всю тему целиком</span>
+@import "strap/themes/strap-ui/_init";
+// <span data-lang-key="basics.structure.initialization.parts">Или частично</span>
+@import "strap/themes/strap-ui/ui/icons/_entypo";</code>
+</pre>
+
+								
 							</div>
 						</div>
 					</div>
@@ -299,7 +302,7 @@
 					Разметка
 				</h2>
 				<small>
-					<code class="language-css">/sass/strap/ui/_grid.scss</code>
+					<code class="language-css">/sass/strap/strap-lib/ui/_grid.scss</code>
 				</small>
 
 				<article>
@@ -824,7 +827,7 @@
 						Текст
 					</h2>
 					<small>
-						<code class="language-css">/sass/strap/ui/_typography.scss</code>
+						<code class="language-css">/sass/strap/strap-lib/ui/_typography.scss</code>
 					</small>
 
 					<div class="Row">
@@ -2938,7 +2941,7 @@
 					Функции
 				</h2>
 				<small>
-					<code class="language-css">/sass/strap/__functions.scss</code>
+					<code class="language-css">/sass/strap/strap-lib/__functions.scss</code>
 				</small>
 
 				<article>
@@ -3002,7 +3005,7 @@ margin-bottom: 31px;</code>
 					Примеси
 				</h2>
 				<small>
-					<code class="language-css">/sass/strap/__mixins.scss</code>
+					<code class="language-css">/sass/strap/strap-lib/__mixins.scss</code>
 				</small>
 
 				<article>

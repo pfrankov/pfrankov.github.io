@@ -1,0 +1,9 @@
+// @required ui/icons
+
+.Icon {
+	@include sprite-dir ("browsers", "themes/strap-docs/sprites");
+
+	&.IE {
+		@include sprite-file("ie");
+	}
+}
